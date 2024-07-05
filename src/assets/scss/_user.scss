@@ -2,3 +2,37 @@
 // user.scss
 // Use this to write your custom SCSS
 //
+
+
+// .bg-purple--primary {
+//     background-color: $purple--dark !important;
+// }
+
+// .color-purple--secondary {
+//     color: $purple--secondary !important;
+// }
+
+.text-purple-primary {
+    color: $purple--text-primary !important;
+}
+
+.hero--primary {
+    background-color: #632093;
+    // background-color: $purple--primary;
+    padding: 6px;
+    font-weight: 400;
+}
+
+.bg--overlay-dark {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.navbar-dark .navbar-brand {
+	filter: brightness(0) invert(1);
+}
+
+.swiper-slide figure img {
+    filter: brightness(0.5);
+}
