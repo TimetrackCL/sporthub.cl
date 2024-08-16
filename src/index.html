@@ -7,15 +7,19 @@
       @@include("partials/head/head-links.html") 
       
       <title>SportHub - Tu Aliado en Organización y Producción de Eventos Deportivos</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+      
+
    </head>
 
    <body>
       @@include("partials/navbar.html",{ "classList": "transparent navbar-transparent navbar-dark" })
       <main>
          <!--Hero start-->
-         <section class="position-relative">
+         <section class="position-relative" id="home">
             <video class="w-100" autoplay muted loop style="object-fit: cover" playsinline>
-               <source src="https://assets.sporthub.cl/file/sporthub-static/video2.mp4" type="video/mp4" />
+               <source src="https://f000.backblazeb2.com/file/sporthub-static/SporthubWeb.mp4" type="video/mp4" />
             </video>
             <div class="position-relative vh-100 bg--overlay-dark d-flex align-items-center" data-cue="fadeIn">
                <div class="row mx-0 justify-content-center text-center">
@@ -28,8 +32,8 @@
                            </p>
                         </div>
                         <div class="d-md-flex d-grid align-items-center justify-content-md-center gap-4">
-                           <a href="#contact-form" class="btn btn-primary btn-lg">¿Hablemos?</a>
-                           <a href="#!" class="link-white icon-link icon-link-hover card-grid-link d-flex justify-content-center">
+                           <a href="#contacto" class="btn btn-primary btn-lg">¿Hablemos?</a>
+                           <a href="#eventos" class="link-white icon-link icon-link-hover card-grid-link d-flex justify-content-center">
                               Últimos Eventos
                               
                               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -46,151 +50,131 @@
          </section>
          <!--Hero end-->
 
-         <!--Service we offer start-->
-         <section class="py-xl-9 py-5 bg-purple--primary" data-cue="fadeIn">
+         <!--Our solutions start-->
+         <section class="py-xl-9 py-5 bg-light" id="servicios">
             <div class="container">
                <div class="row">
-                  <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-12">
-                     <div class="text-center mb-xl-9 mb-5 pt-5">
+                  <div class="col-xl-7 col-md-7" data-cue="fadeIn">
+                     <div class="mb-xl-7 mb-5">
                         <small class="text-uppercase ls-md fw-semibold text-primary text--section text-purple-primary">Servicios que ofrecemos</small>
-                        <h2 class="mt-4 px-xxl-8">Servicios deportivos innovadores con tecnología, calidad y experiencia.</h2>
+                        <h2 class="h1 mb-3 mt-4">Servicios deportivos innovadores con tecnología, calidad y experiencia.</h2>
+                        <!-- <p class="mb-0 text-body">Projects deep and still going deeper in the mobile & web app development space. From A to Z of building beautiful apps, we do everything in-house.</p> -->
                      </div>
                   </div>
                </div>
-               <div class="row mt-4">
-                  <div class="col-md-6">
-                     <div class="card-grid" data-cue="zoomIn">
-                        <div class="card-grid-inner">
-                           <h3 class="card-grid-heading">Producción de Eventos</h3>
-                           <div class="card-grid-text">
-                              <p class="mb-0">Organización integral de eventos deportivos, desde la planificación hasta la ejecución.</p>
-                              <a href="#!" class="icon-link icon-link-hover card-grid-link mt-4">
-                                 Leer más
-                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path
-                                       fill-rule="evenodd"
-                                       d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                                 </svg>
-                              </a>
+               <div class="row g-4" data-cue="fadeIn">
+                  <div class="col-lg-6 col-md-6 col-12">
+                     <div class="card card-lift h-100" data-cue="zoomIn" data-duration="500">
+                        <div class="card-body p-5">
+                           <div class="d-lg-flex">
+                              <div class="p-3 icon-xl icon-shape rounded bg-primary bg-opacity-10 border border-primary-subtle">
+                                 <i class="fas fa-calendar-check text-primary" style="font-size: 22px;"></i>
+                              </div>
+                              <div class="ms-lg-5 mt-4 mt-lg-0">
+                                 <div class="mb-4">
+                                    <h3>Producción de Eventos</h3>
+                                    <p class="mb-0">Organización integral de eventos deportivos, desde la planificación hasta la ejecución.</p>
+                                 </div>
+
+                                 <!-- <a href="#!" class="icon-link icon-link-hover">
+                                    Learn More
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                       <path
+                                          fill-rule="evenodd"
+                                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>
+                                 </a> -->
+                              </div>
                            </div>
-                           <div class="d-block d-lg-none">
-                              <a href="#!" class="icon-link icon-link-hover card-grid-link mt-4">
-                                 Leer más
-                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path
-                                       fill-rule="evenodd"
-                                       d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                                 </svg>
-                              </a>
-                           </div>
-                        </div>
-                        <div class="card-grid-image">
-                           <img src="./assets/images/services/produccion_eventos-2.png" alt="service" class="rounded-3 img-fluid" />
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-6">
-                     <div class="card-grid" data-cue="zoomIn">
-                        <div class="card-grid-inner">
-                           <h3 class="card-grid-heading">Logística para tu carrera</h3>
-                           <div class="card-grid-text">
-                              <p class="mb-0">Gestión completa de la logística de carreras, asegurando una experiencia fluida y exitosa.</p>
-                              <a href="#!" class="icon-link icon-link-hover card-grid-link mt-4">
-                                 Leer más
-                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path
-                                       fill-rule="evenodd"
-                                       d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                                 </svg>
-                              </a>
+                  <div class="col-lg-6 col-md-6 col-12">
+                     <div class="card card-lift h-100" data-cue="zoomIn" data-duration="800">
+                        <div class="card-body p-5">
+                           <div class="d-lg-flex">
+                              <div class="p-3 icon-xl icon-shape rounded bg-success bg-opacity-10 border border-success-subtle">
+                                 <i class="fas fa-stopwatch text-success" style="font-size: 22px;"></i>
+                              </div>
+                              <div class="ms-lg-5 mt-4 mt-lg-0">
+                                 <div class="mb-4">
+                                    <h3>Logística para tu carrera</h3>
+                                    <p class="mb-0">Gestión completa de la logística de carreras, asegurando una experiencia fluida y exitosa.</p>
+                                 </div>
+
+                                 <!-- <a href="#!" class="icon-link icon-link-hover">
+                                    Learn More
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                       <path
+                                          fill-rule="evenodd"
+                                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>
+                                 </a> -->
+                              </div>
                            </div>
-                           <div class="d-block d-lg-none">
-                              <a href="#!" class="icon-link icon-link-hover card-grid-link mt-4">
-                                 Leer más
-                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path
-                                       fill-rule="evenodd"
-                                       d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                                 </svg>
-                              </a>
-                           </div>
-                        </div>
-                        <div class="card-grid-image">
-                           <img src="./assets/images/services/logistica-4.png" alt="service" class="rounded-3 img-fluid" />
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-6">
-                     <div class="card-grid" data-cue="zoomIn">
-                        <div class="card-grid-inner">
-                           <h3 class="card-grid-heading">Infraestructura para tu Evento</h3>
-                           <div class="card-grid-text">
-                              <p class="mb-0">Provisión y montaje de la infraestructura necesaria para eventos deportivos de cualquier escala.</p>
-                              <a href="#!" class="icon-link icon-link-hover card-grid-link mt-4">
-                                 Leer más
-                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path
-                                       fill-rule="evenodd"
-                                       d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                                 </svg>
-                              </a>
+                  <div class="col-lg-6 col-md-6 col-12">
+                     <div class="card card-lift h-100" data-cue="zoomIn" data-duration="800">
+                        <div class="card-body p-5">
+                           <div class="d-lg-flex">
+                              <div class="p-3 icon-xl icon-shape rounded bg-warning bg-opacity-10 border border-warning-subtle">
+                                 <i class="fas fa-cogs text-warning" style="font-size: 22px;"></i>
+                              </div>
+                              <div class="ms-lg-5 mt-4 mt-lg-0">
+                                 <div class="mb-4">
+                                    <h3>Infraestructura para tu Evento</h3>
+                                    <p class="mb-0">Provisión y montaje de la infraestructura necesaria para eventos deportivos de cualquier escala.</p>
+                                 </div>
+
+                                 <!-- <a href="#!" class="icon-link icon-link-hover">
+                                    Learn More
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                       <path
+                                          fill-rule="evenodd"
+                                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>
+                                 </a> -->
+                              </div>
                            </div>
-                           <div class="d-block d-lg-none">
-                              <a href="#!" class="icon-link icon-link-hover card-grid-link mt-4">
-                                 Leer más
-                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path
-                                       fill-rule="evenodd"
-                                       d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                                 </svg>
-                              </a>
-                           </div>
-                        </div>
-                        <div class="card-grid-image">
-                           <img src="./assets/images/services/infraestructuras-3.png" alt="service" class="rounded-3 img-fluid" />
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-6">
-                     <div class="card-grid" data-cue="zoomIn">
-                        <div class="card-grid-inner">
-                           <h3 class="card-grid-heading">Marketing Deportivo</h3>
-                           <div class="card-grid-text">
-                              <p class="mb-0">Estrategias de marketing efectivas para promocionar y maximizar la visibilidad de tus eventos deportivos.</p>
-                              <a href="#!" class="icon-link icon-link-hover card-grid-link mt-4">
-                                 Leer más
-                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path
-                                       fill-rule="evenodd"
-                                       d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                                 </svg>
-                              </a>
+                  <div class="col-lg-6 col-md-6 col-12">
+                     <div class="card card-lift h-100" data-cue="zoomIn" data-duration="1000">
+                        <div class="card-body p-5">
+                           <div class="d-lg-flex">
+                              <div class="p-3 icon-xl icon-shape rounded bg-info bg-opacity-10 border border-info-subtle">
+                                 <i class="fas fa-bullhorn text-info" style="font-size: 22px;"></i>
+                              </div>
+                              <div class="ms-lg-5 mt-4 mt-lg-0">
+                                 <div class="mb-4">
+                                    <h3>Marketing Deportivo</h3>
+                                    <p class="mb-0">Estrategias de marketing efectivas para promocionar y maximizar la visibilidad de tus eventos deportivos.</p>
+                                 </div>
+
+                                 <!-- <a href="#!" class="icon-link icon-link-hover">
+                                    Learn More
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                       <path
+                                          fill-rule="evenodd"
+                                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>
+                                 </a> -->
+                              </div>
                            </div>
-                           <div class="d-block d-lg-none">
-                              <a href="#!" class="icon-link icon-link-hover card-grid-link mt-4">
-                                 Learn More
-                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path
-                                       fill-rule="evenodd"
-                                       d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                                 </svg>
-                              </a>
-                           </div>
-                        </div>
-                        <div class="card-grid-image">
-                           <img src="./assets/images/services/marketing-1.png" alt="service" class="rounded-3 img-fluid" />
                         </div>
                      </div>
                   </div>
-                  
-               
                </div>
             </div>
          </section>
-         <!--Service we offer end-->
+         <!--Our solutions end-->         
+         
 
          <!--Company overview start-->
-         <section class="py-xl-9 py-5 bg-light" data-cue="fadeIn">
+         <section class="py-xl-9 py-5" data-cue="fadeIn" id="nosotros">
             <div class="container">
                <div class="row">
                   <div class="col-12">
@@ -212,7 +196,7 @@
                                  </p>
                               </div>
                               <div>
-                                 <a href="#contact-form" class="btn btn-primary ">Cuentanos de tu proyecto</a>
+                                 <a href="#contacto" class="btn btn-primary ">Cuentanos de tu proyecto</a>
                               </div>
                            </div>
                         </div>
@@ -222,7 +206,7 @@
                               <!-- <img src="./assets/images/about/about_sporthub.png" alt="about" class="rounded-3 img-fluid" /> -->
 
                               <a
-                                 href="https://www.youtube.com/watch?v=CivuutI6lXY"
+                                 href="https://f000.backblazeb2.com/file/sporthub-static/video2.mp4"
                                  class="play-btn glightbox position-absolute top-50 start-50 translate-middle icon-shape icon-xl rounded-circle text-primary">
                                  <i class="bi bi-play-fill"></i>
                               </a>
@@ -241,7 +225,7 @@
 
          <!--Case study start-->
 
-         <section class="py-xl-9 py-5 bg-gray-900">
+         <section class="py-xl-9 py-5 bg-gray-900" id="eventos">
             <div class="container">
                <div class="row">
                   <div class="col-lg-8 offset-lg-2 col-12">
@@ -265,30 +249,7 @@
                   data-breakpoints='{"480": {"slidesPerView": 1}, "768": {"slidesPerView": 1}, "1024": {"slidesPerView": 2}, "1200": {"slidesPerView": 3}}'>
                   <div class="swiper-wrapper pb-lg-8 pb-6 pt-1">
 
-                     <div class="swiper-slide" data-cue="zoomIn">
-                        <div class="card border-0 h-100 card-lift">
-                           <a href="#!"><img src="./assets/images/events/lobarnechea.png" alt="about" class="img-fluid rounded-top-3" /></a>
-                           <div class="card-body">
-                              <div class="d-flex flex-column gap-2">
-                                 <!-- <div>
-                                    <img src="https://placehold.co/152x56" alt="case-study" />
-                                 </div> -->
-                                 <div class="d-flex flex-column gap-4">
-                                    <h4><a href="#!" class="text-reset">Lo Barnechea 10K: Una carrera por la Mujer</a></h4>
-
-                                    <a href="#!" class="icon-link icon-link-hover">
-                                       Conoce más
-                                       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                          <path
-                                             fill-rule="evenodd"
-                                             d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                                       </svg>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+                     
                      <div class="swiper-slide" data-cue="zoomIn">
                         <div class="card border-0 h-100 card-lift">
                            <a href="#!"><img src="./assets/images/events/stgo21k.png" alt="about" class="img-fluid rounded-top-3" /></a>
@@ -300,27 +261,27 @@
                                  <div class="d-flex flex-column gap-4">
                                     <h4><a href="#!" class="text-reset">Santiago 21K: La Carrera Más Rápida de Chile</a></h4>
 
-                                    <a href="#!" class="icon-link icon-link-hover">
+                                    <!-- <a href="#!" class="icon-link icon-link-hover">
                                        Conoce más
                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                           <path
                                              fill-rule="evenodd"
                                              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
                                        </svg>
-                                    </a>
+                                    </a> -->
                                  </div>
                               </div>
                            </div>
                         </div>
                      </div>
-                     <div class="swiper-slide" data-cue="zoomIn">
+                     <!-- <div class="swiper-slide" data-cue="zoomIn">
                         <div class="card border-0 h-100 card-lift">
                            <a href="#!"><img src="./assets/images/events/vina10k.png" alt="about" class="img-fluid rounded-top-3" /></a>
                            <div class="card-body">
                               <div class="d-flex flex-column gap-2">
-                                 <!-- <div>
+                                  <div>
                                     <img src="https://placehold.co/152x56" alt="case-study" />
-                                 </div> -->
+                                 </div> 
                                  <div class="d-flex flex-column gap-4">
                                     <h4><a href="#!" class="text-reset">Viña 10K: Finalizando el Año en la Quinta Región</a></h4>
 
@@ -336,7 +297,7 @@
                               </div>
                            </div>
                         </div>
-                     </div>
+                     </div> -->
 
                      <div class="swiper-slide" data-cue="zoomIn">
                         <div class="card border-0 h-100 card-lift">
@@ -349,19 +310,43 @@
                                  <div class="d-flex flex-column gap-4">
                                     <h4><a href="#!" class="text-reset">Futangue Challenge: Trail en la Cordillera</a></h4>
 
-                                    <a href="#!" class="icon-link icon-link-hover">
+                                    <!-- <a href="#!" class="icon-link icon-link-hover">
                                        Conoce más
                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                           <path
                                              fill-rule="evenodd"
                                              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
                                        </svg>
-                                    </a>
+                                    </a> -->
                                  </div>
                               </div>
                            </div>
                         </div>
                      </div>
+                     <div class="swiper-slide" data-cue="zoomIn">
+                        <div class="card border-0 h-100 card-lift">
+                           <a href="#!"><img src="./assets/images/events/lobarnechea.png" alt="about" class="img-fluid rounded-top-3" /></a>
+                           <div class="card-body">
+                              <div class="d-flex flex-column gap-2">
+                                 <!-- <div>
+                                    <img src="https://placehold.co/152x56" alt="case-study" />
+                                 </div> -->
+                                 <div class="d-flex flex-column gap-4">
+                                    <h4><a href="#!" class="text-reset">Lo Barnechea 10K: Una carrera por la Mujer</a></h4>
+
+                                    <!-- <a href="#!" class="icon-link icon-link-hover">
+                                       Conoce más
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                          <path
+                                             fill-rule="evenodd"
+                                             d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                                       </svg>
+                                    </a> -->
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>                     
                      
                      <!-- Add more slides as needed -->
                   </div>
@@ -380,7 +365,7 @@
          
 
          <!--Form section start-->
-         <section class="bg-light py-lg-9 py-5" id="contact-form">
+         <section class="bg-light py-lg-9 py-5" id="contacto">
             <div class="container">
                <div class="row justify-content-center">
                   <div class="col-lg-10">
@@ -389,7 +374,7 @@
                            <div
                               class="col-md-6 d-none d-md-block rounded-start-3"
                               style="
-                                 background-image: url(./assets/images/form/contact.png);
+                                 background-image: url(./assets/images/form/contact-v1.png);
                                  background-size: cover;
                                  background-repeat: no-repeat;
                                  background-position: center;
@@ -398,42 +383,42 @@
                            </div>
                            <div class="col-xl-6 col-md-6">
                               <div class="card-body p-md-5">
-                                 <form class="row needs-validation g-3" novalidate>
+                                 <form class="row needs-validation g-3" novalidate action="https://formspree.io/f/xrbzllga" method="POST">
                                     <div class="col-lg-12">
                                        <div>
                                           <h3>¿Hablemos de tu Evento?</h3>
                                           <p class="mb-0">
-                                             Envíanos un mensaje sobre tu proyecto a <strong>contacto@sporthub.cl</strong> o a través del formulario de contacto, y nos pondremos en contacto contigo pronto.</p>
+                                             Envíanos un mensaje sobre tu proyecto a <strong>&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#111;&#064;&#115;&#112;&#111;&#114;&#116;&#104;&#117;&#098;&#046;&#099;&#108;</strong> o a través del formulario de contacto, y nos pondremos en contacto contigo pronto.</p>
                                        </div>
-                                    </div>
+                                    </div>                                                                        
                                     <div class="col-lg-12 col-12">
-                                       <label for="companyFirstnameInput" class="form-label">
+                                       <label for="Firstname" class="form-label">
                                           Tu Nombre
                                           <span class="text-danger">*</span>
                                        </label>
-                                       <input type="text" class="form-control" id="companyFirstnameInput" required />
+                                       <input type="text" class="form-control" name="Firstname" id="Firstname" required />
                                        <div class="invalid-feedback">Please enter firstname.</div>
                                     </div>
                                     
                                     <div class="col-md-12">
-                                       <label for="companyEmailInput" class="form-label">
+                                       <label for="Email" class="form-label">
                                           Tu E-mail
                                           <span class="text-danger">*</span>
                                        </label>
-                                       <input type="email" class="form-control" id="companyEmailInput" required />
+                                       <input type="email" class="form-control" name="Email" id="Email" required />
                                        <div class="invalid-feedback">Please enter email.</div>
                                     </div>
                                     <div class="col-md-12">
-                                       <label for="companyPhoneInput" class="form-label">
+                                       <label for="Phone" class="form-label">
                                           Teléfono
                                           <span class="text-danger">*</span>
                                        </label>
-                                       <input type="tel" class="form-control" id="companyPhoneInput" required />
+                                       <input type="tel" class="form-control" name="Phone" id="Phone" required />
                                        <div class="invalid-feedback">Please enter phone.</div>
                                     </div>
                                     <div class="col-md-12">
-                                       <label for="companyTextarea" class="form-label">Cuentanos tu idea</label>
-                                       <textarea class="form-control" id="companyTextarea" placeholder="Escribenos sobre tu idea" rows="3" required></textarea>
+                                       <label for="Comment" class="form-label">Cuentanos tu idea</label>
+                                       <textarea class="form-control" name="Comment" id="Comment" placeholder="Escribenos sobre tu idea" rows="3" required></textarea>
                                        <div class="invalid-feedback">Please write message.</div>
                                     </div>
 
